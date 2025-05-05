@@ -1,0 +1,18 @@
+.tabs {
+  display: flex;
+  align-items: flex-end;
+  height: 1.5rem;
+  padding-left: 2rem;
+  gap: 1rem;
+}
+.tab {
+  font-size: var(--small);
+  font-weight: 600;
+  color: var(--font-secondary);
+  border-bottom: 2px solid transparent;
+  line-height: 1.5rem;
+}
+.active {
+  color: var(--font);
+  border-color: var(--font);
+}

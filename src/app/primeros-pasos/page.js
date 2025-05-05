@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
-import Tabs from "./components/Tabs/Tabs";
-import Subheader from "./components/Subheader/Subheader";
+import Tabs from "../components/Tabs/Tabs";
+import Subheader from "../components/Subheader/Subheader";
 
 export const metadata = {
   title: "Panel de Inicio - Vetro",

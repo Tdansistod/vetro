@@ -1,0 +1,71 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.4rem;
+  width: 100%;
+  max-width: 2.5rem;
+  padding: 0.5rem;
+  height: calc(100% - 1rem);
+  border-radius: 1rem;
+  background-color: var(--background-container);
+  transition: max-width 0.3s;
+  overflow: hidden;
+}
+.extended {
+  max-width: 12rem;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.item {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+}
+.item:hover {
+  background-color: var(--background-secondary);
+}
+.active {
+  background-color: var(--main);
+}
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  min-width: 2.5rem;
+}
+.icon {
+  width: 1.6rem;
+  height: auto;
+}
+.label {
+  font-size: large;
+  font-weight: 600;
+  text-wrap: nowrap;
+  line-height: 1rem;
+  padding: 0 0.5rem;
+}
+.arrowBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--background-secondary);
+  cursor: pointer;
+}
+.arrow {
+  height: 1.3rem;
+  width: auto;
+  transition: transform 0.3s;
+}
+.rotated {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 3.5rem;
+}
+.title {
+  font-size: var(--large);
+  font-weight: 600;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 0.5rem;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.item:hover {
+  background-color: var(--background-secondary);
+}
+.icon {
+  width: 1.6rem;
+  height: auto;
+}
+.logoutBtn {
+  background-color: var(--background-secondary);
+}

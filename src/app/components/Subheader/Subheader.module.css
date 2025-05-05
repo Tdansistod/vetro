@@ -1,0 +1,11 @@
+.subheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 3.5rem;
+}
+.title {
+  font-size: var(--medium);
+  font-weight: 600;
+}
