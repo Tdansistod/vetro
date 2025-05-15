@@ -49,3 +49,10 @@ model UserBranch {
   @@id([userId, branchId])
 }
 
+model File {
+  id      String   @id @default(uuid())
+  name    String
+  header  String[]
+  rows    String   // Guardamos las filas como JSON
+  createdAt DateTime @default(now())
+}

@@ -1,18 +1,16 @@
 "use client";
-import styles from "./Header.module.css";
+import styles from "@/styles/components/Header.module.css";
 import { usePathname } from "next/navigation";
-import { PAGES } from "@/app/lib/navigation";
+import Link from "next/link";
+import { PAGES } from "@/lib/navigation";
 
 export default function Header() {
-  const currentPath = usePathname();
-
-  const title = PAGES.find((item) =>
-    item.navbar.active.includes(currentPath)
-  )?.header;
-
+  const currentPagePath = usePathname();
+  const currentPage = PAGES[currentPagePath];
+  const header = currentPage?.header;
   return (
     <div className={styles.header}>
-      <p className={styles.title}>{title}</p>
+      <p className={styles.title}>{header}</p>
       <div className={styles.buttons}>
         <div className={styles.item}>
           <img
@@ -22,14 +20,14 @@ export default function Header() {
             className={styles.icon}
           />
         </div>
-        <div className={`${styles.item} ${styles.logoutBtn}`}>
+        <Link className={`${styles.item} ${styles.logoutBtn}`} href="/">
           <img
             src="/icons/logout.svg"
             alt="cerrar sesión"
             title="Cerrar sesión"
             className={styles.icon}
           />
-        </div>
+        </Link>
       </div>
     </div>
   );

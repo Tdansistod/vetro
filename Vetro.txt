@@ -1,0 +1,11 @@
+Funciones principales:
+• import: action, loader, error, success, validations.
+• Agregar los nav tipo dropdown (chequeando si hay mas de un path)
+• Crear todas las páginas
+• Exportar
+• Lista (hansontable), Modo edición: Compra, Venta, Clientes.
+• En caja imprimir el listado de descuento con los detalles de la compra para el cliente
+• Funciones de celdas
+• Barra de búsqueda
+• Formas de pago
+• Auth
